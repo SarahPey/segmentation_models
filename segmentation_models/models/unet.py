@@ -110,7 +110,7 @@ def build_unet(
         backbone,
         decoder_block,
         skip_connection_layers,
-        decoder_filters=(256, 128, 64, 32, 16),
+        decoder_filters=(512,256, 128, 64, 32, 16),
         n_upsample_blocks=5,
         classes=1,
         activation='sigmoid',
@@ -169,7 +169,7 @@ def Unet(
         encoder_freeze=False,
         encoder_features='default',
         decoder_block_type='upsampling',
-        decoder_filters=(256, 128, 64, 32, 16),
+        decoder_filters=(512,256, 128, 64, 32, 16),
         decoder_use_batchnorm=True,
         **kwargs
 ):
